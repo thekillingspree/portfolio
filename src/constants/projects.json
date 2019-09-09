@@ -1,0 +1,82 @@
+[
+    {
+        "title": "BookmarkIt",
+        "image": "bookmarkit.webp",
+        "tech": [
+            "Javascript",
+            "Java",
+            "React Native",
+            "Redux",
+            "Firebase"
+        ],
+        "link": "https://play.google.com/store/apps/details?id=com.bookmarkit",
+        "description": "BookmarkIt is a handy app for book lovers so that they don't have to keep looking for a bookmark again when they need one. No more folding corners or keeping books upside down!"
+    },
+    {
+        "title": "TxtPolls",
+        "description": "TxtPolls lets you create text based polls that can be shared anywhere, WhatsApp, Messenger or even SMS! Get started for free.",
+        "image": "txtp.png",
+        "tech": [
+            "HTML5",
+            "Javascript",
+            "Sass",
+            "React",
+            "Redux",
+            "Firebase"
+        ],
+        "link": "https://txtpolls.com"
+    },
+    {
+        "title": "QuickEntry",
+        "image": "quick.png",
+        "tech": [
+            "HTML5",
+            "CSS3",
+            "Javascript",
+            "React",
+            "Redux",
+            "Python",
+            "Flask",
+            "MongoDB"
+        ],
+        "link": "https://quickentry-tks.web.app/",
+        "github": "https://github.com/thekillingspree/quick-entry-client",
+        "description": "Quick-Entry is an Entry Management system, built specially for Terna Engineering College. The college as several rooms which require students to enter details and time of entry. This becomes quite a lengthy process and often leads a to a long queue. Quick-Entry is a solution to handle this type of situations with ease. With Quick-Entry, students can enter into any room by scanning a QR code in the QR code scanner provided, and all the details about the student will be logged in an entry list. This entry list can be viewed from the web App by the admin. "
+    },
+    {
+        "title": "react-native-navbar-style",
+        "description": "react-native-navbar-style is a react-native library for styling the bottom navigation bar on Android devices.",
+        "image": "navbar.png",
+        "tech": [
+            "Javascript",
+            "React Native",
+            "Java"
+        ],
+        "npm": "https://www.npmjs.com/package/react-native-navbar-style",
+        "github": "https://github.com/thekillingspree/react-native-navbar-style"
+    },
+    {
+        "title": "Avalanche Magazine Website",
+        "description": "Avalanche is the official annual magazine of Terna Engineering College, Mumbai. Students can post their own articles which will then be verified by a magazine rep. Once verified, the article will appear on the home page.",
+        "image": "avalanche.png",
+        "tech": [
+            "HTML5",
+            "CSS3",
+            "Javascript",
+            "React",
+            "Redux",
+            "Firebase"
+        ],
+        "link": "https://avalanche-tec.web.app"
+    },
+    {
+        "title": "Mathlete",
+        "image": "mathlete.webp",
+        "tech": [
+            "Java",
+            "Android"
+        ],
+        "link": "https://play.google.com/store/apps/details?id=net.technity.mathfreak",
+        "description": "Is your Math Good and Fast? Can you solve simple equation in a very short period of time? If so, put yourself into the Ultimate test with Mathlete!"
+    }
+]

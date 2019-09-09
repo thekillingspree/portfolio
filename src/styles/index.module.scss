@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //font-family: 'Bitter', serif;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+
+::selection {
+    background-color: #f97057;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #f97057;
+}
+
+.main {
+    background-color: #fff;
+}

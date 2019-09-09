@@ -41,7 +41,7 @@
         ],
         "link": "https://quickentry-tks.web.app/",
         "github": "https://github.com/thekillingspree/quick-entry-client",
-        "description": "Quick-Entry is an Entry Management system, built specially for Terna Engineering College. The college as several rooms which require students to enter details and time of entry. This becomes quite a lengthy process and often leads a to a long queue. Quick-Entry is a solution to handle this type of situations with ease. With Quick-Entry, students can enter into any room by scanning a QR code in the QR code scanner provided, and all the details about the student will be logged in an entry list. This entry list can be viewed from the web App by the admin. "
+        "description": "Quick-Entry is an Entry Management System, built for Terna Engineering College. The college as several rooms which require students to write down their details and time of entry on a register. This is a lengthy process and often leads to a long queue. Quick-Entry can make this process easier and quicker. With Quick-Entry, students can enter into any room by scanning their QR code on the provided QR code scanner and all the details about the student will be added to the room's entry list. The entry list can be viewed from the web app by the admin. "
     },
     {
         "title": "react-native-navbar-style",

@@ -27,6 +27,7 @@ const Cursor = styled.div`
 
 const HelloWrapper = styled.section`
     display: flex;
+    align-items: center;
     margin-bottom: 20px;
 `
 const Text = styled.h1`

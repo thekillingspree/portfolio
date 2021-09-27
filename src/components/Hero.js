@@ -31,6 +31,10 @@ const Intro = styled.p`
     @media only screen and (max-width: 800px) {
         font-size: 1rem;
     }
+
+    a {
+        color: #a7a7a7;
+    }
 `
 const Btn = styled(Button)`
     opacity: 0;
@@ -44,7 +48,7 @@ const Hero = (props) => {
                 <HeroContainer>
                     <Hello />
                     <Greet>I'm Ajesh</Greet>
-                    <Intro>Full Stack Developer</Intro>
+                    <Intro>Azure App Service Support Engineer <a href="https://microsoft.com">@Microsoft</a></Intro>
                     <Social />
                     <Btn href="#about">Learn More</Btn>
                 </HeroContainer>

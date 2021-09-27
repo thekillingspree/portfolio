@@ -35,7 +35,7 @@ const About = props => {
                 <Container style={{zIndex: 1}}>
                     <Title data-aos="fade-right">About Me</Title>
                     <Text data-aos-delay="100" data-aos="fade-right">
-                    I'm a student and full stack developer from Mumbai, India. 
+                    I'm a Support Engineer at the Azure App Service team at Microsoft. 
                     <br/>
                     I'm passionate about creating web apps and native mobile apps with beautiful UI.
                     </Text>
@@ -50,7 +50,7 @@ const About = props => {
                     </Text>
                     <Subtitle data-aos="fade-right" data-aos-anchor-placement="top-bottom">Tools</Subtitle>
                     <Text data-aos="fade-right" data-aos-anchor-placement="top-bottom">
-                        Adobe Illustrator, Adobe XD
+                        Azure, Docker, Adobe Illustrator, Adobe XD
                     </Text>
                     <ReverseButton data-aos-delay="100" href="#projects">My Projects</ReverseButton>
                 </Container>

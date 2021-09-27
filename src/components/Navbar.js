@@ -154,6 +154,12 @@ class Navbar extends Component {
                         <a href="#about">ABOUT</a>
                         <a href="#projects">PROJECTS</a>
                         <a href="#contact">CONTACT</a>
+                        <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://resume.ajesh.dev">
+                            RESUME
+                        </a>
                     </Links>
                     <Hamburger active={menuOpen} onClick={this.handleHam}>
                         <span className="top">&nbsp;</span>
@@ -178,6 +184,14 @@ class Navbar extends Component {
                     onClick={() => this.setState({menuOpen: false})} 
                     href="#contact">
                         CONTACT
+                    </a>
+                    <a
+                    style={{animationDelay: '200ms'}} 
+                    onClick={() => this.setState({menuOpen: false})} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://resume.ajesh.dev">
+                        RESUME
                     </a>
                 </MobileMenu>
             </Nav>

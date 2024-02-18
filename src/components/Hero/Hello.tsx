@@ -64,6 +64,7 @@ const Hello = () => {
 
   useEffect(() => {
     startWriting();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   /* const Cursor = styled.div`

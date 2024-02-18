@@ -1,0 +1,16 @@
+export const siteMetaData = {
+  title: "Ajesh DS - Full Stack Developer",
+  author: "Ajesh DS",
+  headerTitle: "Ajesh DS (ajesh.dev)",
+  description: `Ajesh's personal website. Learn more about the Projects Ajesh has worked on. You can also find several articles written by Ajesh based on the stuff he learns on a daily basis`,
+  language: "en-uk",
+  locale: "en_UK",
+  theme: "system",
+  siteUrl: "https://ajesh.dev",
+  siteLogo: "/logo.png",
+  socialBanner: "/banner.png",
+  email: "iam@ajesh.dev",
+  github: "https://github.com/thekillingspree",
+  twitter: "https://twitter.com/thekillingspre3",
+  linkedin: "https://www.linkedin.com/in/ajeshds/",
+};

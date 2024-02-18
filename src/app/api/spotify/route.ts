@@ -17,7 +17,7 @@ export type SpotifyApiResponse = {
   error?: string;
 };
 
-export const spotifyPlaying = async (
+const spotifyPlaying = async (
   req: NextRequest
 ): Promise<NextResponse<SpotifyApiResponse>> => {
   try {

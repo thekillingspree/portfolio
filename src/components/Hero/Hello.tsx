@@ -11,7 +11,6 @@ const Hello = () => {
 
   const clearText = async (required: string) => {
     let count = required.length - 1;
-    console.log("clearing");
     await new Promise((resolve) => {
       const clsInterval = setInterval(() => {
         setText(required.slice(0, count));

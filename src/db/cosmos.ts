@@ -24,8 +24,6 @@ export class CosmosPostMetaDataHandler implements PostMetaDataHandler {
       .storedProcedure("increment")
       .execute(slug, [slug, `${incType}`]);
 
-    console.log("Executing the SP costed", requestCharge, "RUs");
-
     return {
       error: resource ? null : "Failed to increment views",
     };
@@ -35,8 +33,6 @@ export class CosmosPostMetaDataHandler implements PostMetaDataHandler {
     const { resource: reactions, requestCharge } = await this._container
       .item(slug, slug)
       .read<Reactions>();
-
-    console.log("Getting views costed", requestCharge, "RUs");
 
     return {
       reactions: reactions || null,

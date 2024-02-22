@@ -14,7 +14,6 @@ interface PostTitleProps {
 const PostTitle = ({ post, slug }: PostTitleProps) => {
   useEffect(() => {
     const hasVisited = sessionStorage.getItem(slug);
-    console.log(hasVisited);
     if (!hasVisited) {
       fetch(`/api/reactions/${slug}?incType=views`, { method: "POST" });
       sessionStorage.setItem(slug, "true");

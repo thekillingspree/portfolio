@@ -11,7 +11,6 @@ interface ViewCounterProps {
 
 const ViewCounter = ({ slug, showCount = true }: ViewCounterProps) => {
   const { reactions, isLoading, error } = useReactions(slug);
-  console.log(reactions, error);
   if (isLoading)
     return (
       <div className="flex">

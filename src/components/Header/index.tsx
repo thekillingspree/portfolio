@@ -15,9 +15,7 @@ import { useTheme } from "next-themes";
 
 const Header = () => {
   const { setTheme, theme } = useTheme();
-  console.log(theme);
   const handleTheme = () => {
-    console.log(theme);
     if (theme === "dark") {
       setTheme("light");
     } else {

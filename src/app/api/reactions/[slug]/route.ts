@@ -29,6 +29,5 @@ export async function POST(
     );
   }
   postMetadata.increment(params.slug, incType as IncrementType);
-  console.log(`Reaction type ${incType} incremented for ${params.slug}`);
   return NextResponse.json({ success: true });
 }

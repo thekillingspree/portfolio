@@ -22,8 +22,8 @@ const PostTitle = ({ post, slug }: PostTitleProps) => {
   }, [post, slug]);
 
   return (
-    <div className="container mt-[120px] relative h-[260px] rounded-lg z-10">
-      <div className="w-full h-full flex flex-col items-start justify-center px-8">
+    <div className="container mt-[120px] relative h-[260px] rounded-lg mb-10 z-10">
+      <div className="w-full h-full flex flex-col items-start justify-end px-8">
         <motion.h1
           className="inline-block mt-6 font-bold capitalize text-foreground text-5xl leading-normal relative w-5/6"
           {...getTransition()}

@@ -5,6 +5,7 @@ import rehypeAutoLinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import rehypePrettyCode from "rehype-pretty-code";
 import GithubSlugger from "github-slugger";
+import { techIcons } from "./src/components/ui/tech-icons";
 
 export interface TOCHeading {
   level: string;
@@ -87,13 +88,67 @@ const Post = defineDocumentType(() => ({
   },
 }));
 
-const Projects = defineDocumentType(() => ({
-  name: "Projects",
+const Nugget = defineDocumentType(() => ({
+  name: "Nugget",
+  filePathPattern: "**/nugget/**/*.mdx",
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true,
+    },
+    author: {
+      type: "string",
+      required: true,
+    },
+    description: {
+      type: "string",
+      required: true,
+    },
+    image: {
+      type: "image",
+    },
+    publishedAt: {
+      type: "date",
+      required: true,
+    },
+    isPublished: {
+      type: "boolean",
+      default: false,
+    },
+    updatedAt: {
+      type: "date",
+    },
+    tags: {
+      type: "list",
+      required: true,
+      of: {
+        type: "string",
+      },
+    },
+  },
+  computedFields: {
+    url: {
+      type: "string",
+      resolve: (post) => `/${post._raw.flattenedPath}`,
+    },
+  },
+}));
+
+const Project = defineDocumentType(() => ({
+  name: "Project",
   filePathPattern: "**/projects/*.mdx",
   fields: {
     title: {
       type: "string",
       required: true,
+    },
+    date: {
+      type: "date",
+      required: true,
+    },
+    image: {
+      type: "image",
     },
     description: {
       type: "string",
@@ -111,7 +166,8 @@ const Projects = defineDocumentType(() => ({
     tags: {
       type: "list",
       of: {
-        type: "string",
+        type: "enum",
+        options: Object.keys(techIcons),
       },
     },
   },
@@ -124,7 +180,7 @@ const codeOptions = {
 export default makeSource({
   /* options */
   contentDirPath: "content",
-  documentTypes: [Post, Projects],
+  documentTypes: [Post, Project, Nugget],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <motion.header
-      className="flex max-w-[1366px] w-full items-center h-[64px] justify-between fixed top-6 left-0 right-0 z-50 px-10"
+      className=" container flex items-center h-[64px] justify-between fixed top-6 left-0 right-0 z-50"
       {...getTransition()}
     >
       <nav
@@ -37,8 +37,8 @@ const Header = () => {
         <span className="flex items-center space-x-4 mx-4 font-semibold">
           <Link href="/posts">Posts</Link>
           <Link href="/projects">Projects</Link>
+          <Link href="/resources">Nuggets</Link>
           <Link href="/about">About</Link>
-          <Link href="/resources">Resources</Link>
         </span>
       </nav>
       <div

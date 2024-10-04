@@ -8,6 +8,11 @@ import { siteMetaData } from "../utils/siteMetadata";
 import { ThemeProvider } from "../Providers/ThemeProvider";
 import { LayoutTransition } from "../components/ui/layoutTransition";
 import { Toaster } from "@/src/components/ui/toaster";
+import dynamic from "next/dynamic";
+
+const NoSSRBeams = dynamic(() => import("../components/ui/background-beams"), {
+  ssr: false,
+});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -78,6 +83,7 @@ export default function RootLayout({
           disableTransitionOnChange={false}
         >
           <Header />
+          <NoSSRBeams className="h-[120vh] w-screen max-w-full top-0 bottom-0 left-0 right-0 -z-10 overflow-hidden" />
           <LayoutTransition>
             <main className="max-w-[1366px] px-16 pt-[100px] flex flex-col items-center justify-center">
               {children}

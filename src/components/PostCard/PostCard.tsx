@@ -28,9 +28,6 @@ const PostCard = ({ post }: SmallCardProps) => {
         />
       </Link>
       <div className="w-full flex flex-col mt-4">
-        <span className="uppercase text-accentYellow font-semibold text-sm">
-          {post.tags[0]}
-        </span>
         <Link href={post.url} className="inline-block my-1">
           <h1 className={cx("font-semibold capitalize text-lg")}>
             <span className="bg-gradient-to-r from-accentYellow/50 to-accentYellow/50 bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-all ease duration-100">

@@ -12,6 +12,7 @@ import {
   Twitter,
 } from "lucide-react";
 import { GithubIcon } from "../Icons";
+import SocialLinks from "./SocialLinks";
 
 const Footer = () => {
   return (
@@ -43,32 +44,7 @@ const Footer = () => {
           <div className="flex-1">
             <p>Ajesh DS © 2024</p>
           </div>
-          <div className="flex space-x-3">
-            <Link
-              href="https://twitter.com/thekillingspre3"
-              className="font-bold flex space-x-2 hover:underline"
-            >
-              <Twitter strokeWidth={1} />
-            </Link>
-            <Link
-              href="https://instagram.com/ajeshhds"
-              className="font-bold flex space-x-2 hover:underline"
-            >
-              <Instagram strokeWidth={1} />
-            </Link>
-            <Link
-              href="https://github.com/thekillingspree"
-              className="font-bold flex space-x-2 hover:underline"
-            >
-              <Github strokeWidth={1} />
-            </Link>
-            <Link
-              href="https://linkedin.com/in/ajeshds"
-              className="font-bold flex space-x-2 hover:underline"
-            >
-              <Linkedin strokeWidth={1} />
-            </Link>
-          </div>
+          <SocialLinks />
         </div>
       </footer>
     </>

@@ -35,3 +35,40 @@ export const useSpotify = () => {
     track: data,
   };
 };
+
+import { useCallback, useEffect, useState } from "react";
+
+interface MetaData {
+  image: string;
+}
+
+export const useOpenGraphImage = (url?: string): string | null => {
+  const [metaData, setMetaData] = useState<MetaData | null>(null);
+
+  const fetchMetaData = useCallback(async () => {
+    try {
+      const response = await fetch(`/api/openGraph?url=${url}`);
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      const { image } = await response.json();
+      setMetaData({ image });
+    } catch (error) {
+      //console.error("Error:", error);
+    }
+  }, [url]);
+
+  useEffect(() => {
+    if (url) {
+      fetchMetaData();
+    }
+  }, [url, fetchMetaData]);
+
+  if (!url) {
+    return null;
+  }
+
+  return metaData?.image || null;
+};

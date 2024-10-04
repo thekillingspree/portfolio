@@ -20,9 +20,13 @@ const PostCardLarge = ({
     <article
       className={cx(
         "flex flex-col items-start justify-end relative",
-        isHero ? "h-full" : "w-full",
         containerClassName
       )}
+      style={{
+        width: isHero ? "auto" : "100%",
+        height: isHero ? "100%" : "auto",
+        minHeight: isHero ? "400px" : "auto",
+      }}
     >
       <div
         className={cx(
@@ -53,11 +57,6 @@ const PostCardLarge = ({
             : "w-full p-10 z-20"
         )}
       >
-        <Tag
-          link={`/posts/categories/${post.tags[0]}`}
-          tagName={post.tags[0]}
-          className={cx(!isHero && "px-6 text-sm py-2 border-1")}
-        />
         <Link href={post.url} className="mt-6">
           <h1
             className={cx(

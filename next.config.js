@@ -15,6 +15,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "i.scdn.co",
       },
+      {
+        protocol: "https",
+        hostname: "opengraph.githubassets.com",
+      },
+      {
+        protocol: "https",
+        hostname: "static-production.npmjs.com",
+      },
     ],
   },
 };

@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { getTransition } from "@/src/utils/transition";
 import { Button, buttonVariants } from "../ui/button";
 import Link from "next/link";
+import SocialLinks from "../Footer/SocialLinks";
 
 const Hero = () => {
   return (
@@ -21,9 +22,12 @@ const Hero = () => {
         <motion.p className="text-xl mt-4" {...getTransition({ delay: 0.4 })}>
           Software Engineer @Microsoft Security
         </motion.p>
+        <motion.div className="mt-4" {...getTransition({ delay: 0.5 })}>
+          <SocialLinks />
+        </motion.div>
         <motion.div
           className="flex items-center space-x-4 mt-6"
-          {...getTransition({ delay: 0.5 })}
+          {...getTransition({ delay: 0.6 })}
         >
           <Link
             className={buttonVariants({ variant: "outline" })}

@@ -6,11 +6,13 @@ interface GetTransitionArgs {
   duration?: number;
   delay?: number;
   distance?: number;
+  disableExit?: boolean;
 }
 export const getTransition = ({
   duration = 0.4,
   delay = 0,
   distance = 50,
+  disableExit = false,
 }: GetTransitionArgs = {}): CustomTransition => {
   const transition = {
     duration,
@@ -27,11 +29,13 @@ export const getTransition = ({
       y: 0,
       transition,
     },
-    exit: {
-      opacity: 0,
-      y: distance,
-      transition,
-    },
+    exit: disableExit
+      ? undefined
+      : {
+          opacity: 0,
+          y: distance,
+          transition,
+        },
   };
 };
 

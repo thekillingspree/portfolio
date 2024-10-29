@@ -19,7 +19,7 @@ const PostCardLarge = ({
   return (
     <article
       className={cx(
-        "flex flex-col items-start justify-end relative",
+        "flex flex-col items-start justify-end relative z-50",
         containerClassName
       )}
       style={{

@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <>
       <Hr />
-      <footer className="container p-10 flex justify-center items-center flex-col">
+      <footer className="container p-10 flex justify-center items-center flex-col overflow-x-hidden">
         <div className="w-full mb-8 flex space-x-10 justify-center items-center text-foreground/60">
           <Link
             href="mailto:contact@ajesh.dev"

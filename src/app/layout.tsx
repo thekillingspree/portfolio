@@ -67,13 +67,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
         className={cx(
           inter.variable,
           manrope.variable,
           "font-mr",
-          "bg-background flex flex-col justify-center items-center"
+          "container bg-background flex flex-col justify-center items-center overflow-x-hidden"
         )}
       >
         <ThemeProvider
@@ -83,7 +83,9 @@ export default function RootLayout({
           disableTransitionOnChange={false}
         >
           <Header />
-          <NoSSRBeams className="h-[120vh] w-screen max-w-full top-0 bottom-0 left-0 right-0 -z-10 overflow-hidden" />
+          <div className="absolute top-0 bottom-0 left-0 right-0">
+            <NoSSRBeams className="h-[120vh] w-screen max-w-screen -z-10 overflow-y-visible" />
+          </div>
           <LayoutTransition>
             <main className="max-w-[1366px] px-16 pt-[100px] flex flex-col items-center justify-center">
               {children}

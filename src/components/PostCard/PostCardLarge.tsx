@@ -19,14 +19,10 @@ const PostCardLarge = ({
   return (
     <article
       className={cx(
-        "flex flex-col items-start justify-end relative",
+        "flex flex-col items-start justify-end relative z-50 w-full",
+        isHero ? "md:w-auto h-[250px] md:min-h-[400px]" : "w-full h-auto",
         containerClassName
       )}
-      style={{
-        width: isHero ? "auto" : "100%",
-        height: isHero ? "100%" : "auto",
-        minHeight: isHero ? "400px" : "auto",
-      }}
     >
       <div
         className={cx(
@@ -53,7 +49,7 @@ const PostCardLarge = ({
         className={cx(
           "text-light capitalize",
           isHero
-            ? "w-3/4 p-16 flex flex-col items-start justify-center z-0"
+            ? "w-[90%] md:w-3/4 p-8 md:p-16 flex flex-col items-start justify-center z-0"
             : "w-full p-10 z-20"
         )}
       >
@@ -61,7 +57,7 @@ const PostCardLarge = ({
           <h1
             className={cx(
               "font-bold capitalize",
-              isHero ? "text-2xl" : "text-xl mt-6"
+              isHero ? "text-lg md:text-2xl" : "text-md md:text-xl mt-6"
             )}
           >
             <span className="bg-gradient-to-r from-accentYellow to-accentYellow bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-all ease duration-100">
@@ -70,7 +66,9 @@ const PostCardLarge = ({
           </h1>
         </Link>
         {isHero && (
-          <p className="inline-block mt-4 font-in">{post.description}</p>
+          <p className="hidden md:inline-block mt-4 font-in">
+            {post.description}
+          </p>
         )}
       </div>
     </article>

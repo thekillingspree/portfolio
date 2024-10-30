@@ -83,13 +83,13 @@ const Hello = () => {
       className="flex items-center mb-2"
       {...getTransition({ delay: 0.1 })}
     >
-      <h1 className="text-md font-bold sm:text-4xl font-courier text-foreground">
+      <h1 className="text-md font-bold md:text-3xl font-courier text-foreground">
         {" "}
         {text}
       </h1>
       <div
         className={cx(
-          "w-1 h-full text-md sm:w-2 sm:text-5xl bg-foreground",
+          "w-1 h-full text-lg sm:w-2 md:text-4xl bg-foreground",
           done && "animate-cursorBlink"
         )}
         // done={state.done}

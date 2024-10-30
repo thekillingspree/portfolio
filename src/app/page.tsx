@@ -9,7 +9,7 @@ const sortedPosts = sortPosts(allPosts);
 export default function Home() {
   return (
     <>
-      <div className="w-full mt-32 h-[75vh]">
+      <div className="container mt-32 h-[75vh]">
         <Hero />
       </div>
       <HomeCoverSection posts={sortedPosts} />

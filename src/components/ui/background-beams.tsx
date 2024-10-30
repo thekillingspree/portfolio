@@ -162,7 +162,7 @@ const BackgroundBeams = ({ className }: { className?: string }) => {
   return (
     <div
       className={cn(
-        "h-full w-full inset-0 [mask-size:40px] [mask-repeat:no-repeat] flex items-center justify-center scale-[3] md:scale-[1]",
+        "h-full w-full inset-0 [mask-size:40px] [mask-repeat:no-repeat] flex items-center justify-center scale-[3] md:scale-100",
         className
       )}
     >

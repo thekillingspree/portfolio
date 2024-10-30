@@ -14,10 +14,10 @@ const FeaturedPosts = ({ posts }: FeaturedPostsProps) => {
         Featured Posts
       </h2>
 
-      <div className="grid grid-cols-2 grid-rows-2 gap-6 mt-16">
+      <div className="grid grid-rows-2 grid-cols-2 gap-6 mt-8 md:mt-16 md:max-h-[350px]">
         <PostCardLarge
           post={posts[5]}
-          containerClassName="col-span-1 row-span-2 relative"
+          containerClassName="col-span-2 row-span-1 relative md:col-span-1 md:row-span-2"
         />
         <article className="col-span-1 row-span-1 relative">
           <PostCardSmall post={posts[1]} />

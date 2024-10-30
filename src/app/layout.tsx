@@ -83,11 +83,11 @@ export default function RootLayout({
           disableTransitionOnChange={false}
         >
           <Header />
-          <div className="absolute top-0 bottom-0 left-0 right-0 overflow-x-hidden md:overflow-visible">
-            <NoSSRBeams className="h-[120vh] w-screen max-w-screen -z-10" />
+          <div className="absolute top-0 left-0 right-0 overflow-x-hidden">
+            <NoSSRBeams className="h-[140vh] md:h-[160vh] w-screen max-w-screen" />
           </div>
           <LayoutTransition>
-            <main className="max-w-[1366px] px-16 pt-[100px] flex flex-col items-center justify-center">
+            <main className="max-w-[1366px] px-[5%] md:px-16 pt-[100px] flex flex-col items-center justify-center">
               {children}
             </main>
           </LayoutTransition>
